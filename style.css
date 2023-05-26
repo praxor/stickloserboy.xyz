@@ -1,0 +1,48 @@
+html {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: PixelIntv;
+    z-index: 1;
+}
+@font-face {
+    font-family: PixelIntv;
+    src: url(/PixelIntv-OPxd.ttf);
+  }
+body {
+    position: relative;
+    z-index: 3;
+}
+button {
+    background-color: rgba(29, 7, 39, 0); /* Green */
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: PixelIntv;
+    transition: all 800ms;
+}
+button:hover {
+    transform: scale(1.1);
+}
+a {
+    text-decoration: none;
+}
+  .crt::before {
+    content: " ";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(103, 18, 139, 0.178) 50%, rgba(103, 18, 139, 0.394) 50%), linear-gradient(90deg, rgba(148, 45, 45, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    z-index: 2;
+    background-size: 100% 2px, 3px 100%;
+    pointer-events: none;
+  }
+
+  
