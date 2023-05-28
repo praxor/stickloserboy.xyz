@@ -27,7 +27,6 @@ body {
     width: 700px; height: 200px;
     background-color: rgb(18, 1, 63);
     border: none;
-    color: white;
     text-decoration: none;
     display: flex;
     justify-content: space-around;
@@ -37,6 +36,33 @@ body {
     border: solid 8px #1b058f;
     border-radius: 20px;
     margin-top: 20px;
+}
+.art-icon {
+    background-color: none;
+}
+button:hover {
+    transform: scale(1.05);
+}
+button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    transition: all 800ms;
+}
+hr {
+    background-color: #1b058f;
+    border: none;
+    height: 8px;
+    width: 800px;
+}
+.social-text {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -20px;
 }
 .icon {
     padding-left:45px;
@@ -57,20 +83,7 @@ a {
     color: white;
 }
 p {
-  font-family: ComicStory;
-}
-.crt::before {
-    content: " ";
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: linear-gradient(rgba(22, 2, 52, 0.178) 50%, rgba(22, 2, 52, 0.178) 50%), linear-gradient(90deg, rgba(148, 45, 45, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-    z-index: 2;
-    background-size: 100% 2px, 3px 100%;
-    pointer-events: none;
+    font-family: ComicStory;
 }
 .card {
     margin-top: 100px; margin-bottom: 100px;
@@ -81,7 +94,7 @@ p {
     width: 800px; height: 1900px;
     border: solid 8px #1b058f;
     border-radius: 20px;
-    background: linear-gradient(#2b0468 10%, rgb(22, 2, 52) 30%);
+    background: linear-gradient(#2b0468 20%, rgb(22, 2, 52) 30%, rgb(22, 2, 52) 80%, #1b058f 1%);
     overflow: hidden;
 }
 .header {
@@ -92,17 +105,47 @@ p {
     justify-content: center;
     flex-direction: column;
 }
+.bottom {
+    width: 800px; height: 100%;
+    background: linear-gradient(rgb(22, 2, 52), rgb(8, 2, 37) 20%);
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 800ms;
+}
+#art-grid {
+    justify-content: center;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    'art1 art2'
+    'art3 art4';
+}
+#art1 {
+    grid-area: art1;
+}
+#art2 {
+    grid-area: art2;
+}
+#art3 {
+    grid-area: art3;
+}
+#art4 {
+    grid-area: art4;
+}
+
 #profilepic {
-  display: flex;
-  align-items: center; justify-content: center;
-  gap: 50px;
+    display: flex;
+    align-items: center; justify-content: center;
+    gap: 50px;
 }
 .star1, .star2 {
-  font-size: 8em;
-  -webkit-user-select: none;     
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    font-size: 8em;
+    -webkit-user-select: none;     
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .about {
     width: 700px; height: 200px;
